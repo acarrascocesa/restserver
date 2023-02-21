@@ -5,7 +5,7 @@ const cors = require("cors");
 class Server {
   constructor() {
     this.app = express();
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 8000;
     this.usersPath = "/api/users";
 
     // Middlewares: son funciones que se ejecutan siempre que inicia nuestro servidor
